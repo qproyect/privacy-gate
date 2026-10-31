@@ -1,0 +1,47 @@
+{
+  "name": "privacy-gate",
+  "version": "1.0.0",
+  "description": "Deterministic hysteresis privacy gate for real-time camera and recording frame pipelines.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "example": "tsx examples/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "privacy",
+    "camera",
+    "gate",
+    "hysteresis",
+    "state-machine",
+    "recording-pipeline"
+  ],
+  "author": "Lucas F. Meneses",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  }
+}
